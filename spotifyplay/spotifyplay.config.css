@@ -1,0 +1,31 @@
+/**
+ * Spotify Play - Configuration CSS file
+ *
+ * Block for adding spotify play button. Support playing song, album, artist or playlist.
+ *
+ * @copyright Roy Hadrianoro
+ *
+ * @license MIT
+ *
+ * @package spotifyplay
+ * @version 0.0.1
+ * @author  Roy Hadrianoro <dev@maysora.com>
+ * @link    https://www.schlix.com
+ */
+
+.spotifyplay-help-popup {
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 400px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  z-index: 999;
+}
+.spotifyplay-help-popup img {
+  width: 100%;
+}
+
+.spotifyplay-help-btn {
+  display: none;
+}
