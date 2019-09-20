@@ -44,7 +44,8 @@ class SpotifyPlayMacro extends \SCHLIX\cmsMacro {
     }
     if ($this->config['bool_match_playlist']) {
       // https://open.spotify.com/user/bethesdanet/playlist/6odolWS2Iu1L3XjXZJifSF?si=-dnMnSOjROmSyPaclL-BVw
-      $match_items[] = 'user\/\w+\/playlist\/\w+';
+      // https://open.spotify.com/playlist/6odolWS2Iu1L3XjXZJifSF?si=-dnMnSOjROmSyPaclL-BVw
+      $match_items[] = '(user\/\w+\/)?playlist\/\w+';
     }
 
     $items_regexp = join('|', $match_items);
